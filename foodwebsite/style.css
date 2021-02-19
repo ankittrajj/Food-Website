@@ -22,12 +22,9 @@ html{
     justify-content:space-evenly;
     align-items: center;
     flex-direction: column;
-    
-    
 }
 .section-1 .section-heading{
     font-size: 12rem;
-    
     font-weight:900;
     color: #fff;
     text-shadow: 2px 2px 10px #000;
@@ -36,11 +33,20 @@ html{
     letter-spacing: 2px;
     word-spacing: 2px;
     text-decoration: white .1rem underline;
-    /* margin-bottom: 5rem; */
 }
 .section-1 .section-1-icons i{
     font-size: 17rem;
     color: turquoise;
     position: absolute;
+    transform: translate(-50% ,-50%) scale(0);
+    text-shadow:2px 2px 2px #000;
+    transition: transform .5s ease;
 }
+.section-1 .section-1-icons i.change-icon{
+    transform:translate(-50%,-50%)scale(1);
+}
+.section-1 .section-1-icons span{
+    font-size: 12rem;
+}
+
 /* section-1 end  */
